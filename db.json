@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "name": "komal",
+      "email": "abs@gmail.com",
+      "city": "Delhi",
+      "content": "Weather",
+      "description": "Today is rainy season."
+    },
+    {
+      "name": "nidhi",
+      "mail-id": "abs@gmail.com",
+      "city": "Delhi",
+      "content": "Weather",
+      "description": "Today is rainy season."
+    },
+    {
+      "name": "rohit",
+      "mail-id": "abs@gmail.com",
+      "city": "Delhi",
+      "content": "Weather",
+      "description": "Today is rainy season."
+    },
+    {
+      "name": "suraj",
+      "mail-id": "abs@gmail.com",
+      "city": "Delhi",
+      "content": "Weather",
+      "description": "Today is rainy season."
+    },
+    {
+      "name": "ajay",
+      "mail-id": "abs@gmail.com",
+      "city": "Delhi",
+      "content": "Weather",
+      "description": "Today is rainy season."
+    },
+    {
+      "name": "priya",
+      "mail-id": "abs@gmail.com",
+      "city": "Delhi",
+      "content": "Weather",
+      "description": "Today is rainy season."
+    }
+  ]
+}
