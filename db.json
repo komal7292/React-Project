@@ -1,46 +1,122 @@
 {
   "posts": [
     {
-      "name": "komal",
+      "id": 1,
+      "username": "komal",
       "email": "abs@gmail.com",
       "city": "Delhi",
-      "content": "Weather",
+      "topic": "Weather",
       "description": "Today is rainy season."
     },
     {
-      "name": "nidhi",
-      "mail-id": "abs@gmail.com",
+      "id": 2,
+      "username": "nidhi",
+      "email": "abs@gmail.com",
       "city": "Delhi",
-      "content": "Weather",
+      "topic": "Weather",
       "description": "Today is rainy season."
     },
     {
-      "name": "rohit",
-      "mail-id": "abs@gmail.com",
+      "id": 3,
+      "username": "rohit",
+      "email": "abs@gmail.com",
       "city": "Delhi",
-      "content": "Weather",
+      "topic": "Weather",
       "description": "Today is rainy season."
     },
     {
-      "name": "suraj",
-      "mail-id": "abs@gmail.com",
+      "id": 4,
+      "username": "suraj",
+      "email": "abs@gmail.com",
       "city": "Delhi",
-      "content": "Weather",
+      "topic": "Weather",
       "description": "Today is rainy season."
     },
     {
-      "name": "ajay",
-      "mail-id": "abs@gmail.com",
+      "id": 5,
+      "username": "ajay",
+      "email": "abs@gmail.com",
       "city": "Delhi",
-      "content": "Weather",
+      "topic": "Weather",
       "description": "Today is rainy season."
     },
     {
-      "name": "priya",
-      "mail-id": "abs@gmail.com",
+      "id": 6,
+      "username": "priya",
+      "email": "abs@gmail.com",
       "city": "Delhi",
-      "content": "Weather",
+      "topic": "Weather",
       "description": "Today is rainy season."
+    },
+    {
+      "username": [
+        "komal"
+      ],
+      "email": [
+        "kg681278@gmail.com"
+      ],
+      "city": [
+        "faridabad"
+      ],
+      "topic": [
+        "food"
+      ],
+      "description": [
+        "I love chinese food"
+      ],
+      "id": 7
+    },
+    {
+      "username": [
+        "priya"
+      ],
+      "email": [
+        "pg12@gmail.com"
+      ],
+      "city": [
+        "ganesh nagar delhi"
+      ],
+      "topic": [
+        "lockdown"
+      ],
+      "description": [
+        "lockdown is become now headche"
+      ],
+      "id": 8
+    },
+    {
+      "username": [
+        "akhil"
+      ],
+      "email": [
+        "saxena21@gmail.com"
+      ],
+      "city": [
+        "noida"
+      ],
+      "topic": [
+        "weather"
+      ],
+      "description": [
+        "hotty day"
+      ],
+      "id": 9
+    },
+    {
+      "username": "",
+      "email": "",
+      "city": "",
+      "topic": "",
+      "description": "",
+      "id": 10
+    },
+    {
+      "username": "",
+      "email": "",
+      "city": "",
+      "topic": "",
+      "description": "",
+      "id": 11
     }
   ]
 }

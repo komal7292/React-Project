@@ -8,7 +8,7 @@ const Screenpage = () => {
   const apiPost = () => {
     fetch("http://localhost:3001/posts")
       .then((response) => response.json())
-      .then((json) => setPosts(json));
+      .then((data) => setPosts(data.reverse()));
   };
   useEffect(() => {
     apiPost();
@@ -18,8 +18,11 @@ const Screenpage = () => {
       <div className="ui container segment">
         <h1 className="ui block header">Social media app</h1>
         <img src={images} alt="My Social Website" height="90px" width="200px" />
-        <br />
-        <Link to="/postupload" className="ui primary button">
+        <Link
+          to="/postupload"
+          style={{ margin: "25px 10px 10px 10px" }}
+          className="ui primary button style"
+        >
           Upload your post
         </Link>
       </div>
@@ -29,10 +32,10 @@ const Screenpage = () => {
             <div key={index} className="item">
               <i className="map marker icon"></i>
               <div className="content">
-                <p>{data.name}</p>
+                <p>{data.username}</p>
                 <h5>{data.email}</h5>
                 <h5>{data.city}</h5>
-                <div>{data.content}</div>
+                <div>{data.topic}</div>
                 <div>{data.description}</div>
                 <button className="ui green button">Edit</button>
                 <button className="ui red button">Delete</button>

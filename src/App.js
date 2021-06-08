@@ -2,6 +2,8 @@ import React from 'react';
 import {Route, Switch} from 'react-router-dom';
 import Postupload from './Postupload'
 import Screenpage from './Screenpage';
+import './app.css';
+
 // import axios from "axios";
 
 const App = () => {
