@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 
-const Postupload = () => {
+const Edituser = () => {
   let history = useHistory();
   const [post, setPost] = useState({
     username: "",
@@ -99,4 +99,4 @@ const Postupload = () => {
     </div>
   );
 };
-export default Postupload;
+export default Edituser;

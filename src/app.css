@@ -1,7 +1,50 @@
-* {
+body {
   background-color: bisque;
 }
 
 .style {
+  float: right;
+}
+
+.name {
+  font-style: italic;
+  padding-top: 0.5em;
+  font-style: oblique;
+}
+
+.email {
+  margin-top: 0.5em;
+  color: dimgray;
+  line-height: 1%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 200;
+  font-size: medium;
+}
+
+.city {
+  color: dimgray;
+  line-height: 1%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 200;
+  font-size: medium;
+}
+
+.topic {
+  color: dimgray;
+  line-height: 1%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 200;
+  font-size: medium;
+}
+
+.desc {
+  color: dimgray;
+  line-height: 1%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 200;
+  font-size: medium;
+}
+
+.buttonStyle {
   float: right;
 }
