@@ -143,24 +143,6 @@
         "Suraj Gupta"
       ],
       "email": [
-        "dsd@gmail.com"
-      ],
-      "city": [
-        "dehradun"
-      ],
-      "topic": [
-        "test"
-      ],
-      "description": [
-        "test"
-      ],
-      "id": 13
-    },
-    {
-      "username": [
-        "Suraj Gupta"
-      ],
-      "email": [
         "suraj78@gmail.com"
       ],
       "city": [
@@ -173,6 +155,42 @@
         "I like to play game. and my favorite game is free fire."
       ],
       "id": 14
+    },
+    {
+      "username": [
+        "komal"
+      ],
+      "email": [
+        "kg@gmail.com"
+      ],
+      "city": [
+        "Bihar"
+      ],
+      "topic": [
+        "React Project"
+      ],
+      "description": [
+        "I made a react project."
+      ],
+      "id": 20
+    },
+    {
+      "username": [
+        "nidhi"
+      ],
+      "email": [
+        "nidhi@gmail.com"
+      ],
+      "city": [
+        "delhi"
+      ],
+      "topic": [
+        "doreamon"
+      ],
+      "description": [
+        "doreamon show is very intresting "
+      ],
+      "id": 21
     }
   ]
 }

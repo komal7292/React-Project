@@ -32,7 +32,7 @@ const Postupload = () => {
   return (
     <div className="ui container segment" style={{ marginTop: "50px" }}>
       <form
-        onSubmit={(event) => submitHandler(event)}
+        onSubmit={(e) => submitHandler(e)}
         className="ui container form"
       >
         <div className="field">

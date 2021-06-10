@@ -1,95 +1,85 @@
-import axios from "axios";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import axios from "axios";
 
 const Edituser = () => {
+  let { id } = useParams();
   let history = useHistory();
-  const [post, setPost] = useState({
-    username: "",
-    email: "",
-    city: "",
-    topic: "",
-    description: "",
-  });
-  const { username, email, city, topic, description } = post;
+  const [user, setUser] = useState([]);
+  const { username, email, city, topic, description } = user;
+
   function inputChange(e) {
-    setPost({ ...post, [e.target.name]: [e.target.value] });
+    setUser({ ...user, [e.target.name]: [e.target.value] });
   }
 
   const submitHandler = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:3001/posts", post);
+    await axios.put(`http://localhost:3001/posts/${id}`, user);
     history.push("/");
-    setPost({
-      username: "",
-      email: "",
-      city: "",
-      topic: "",
-      description: "",
-    });
   };
 
+  const loadUser = async () => {
+    const result = await axios.get(`http://localhost:3001/posts/${id}`);
+    setUser(result.data);
+  };
+
+  useEffect(() => {
+    loadUser();
+  }, []);
   return (
-    <div className="ui container segment" style={{ marginTop: "50px" }}>
-      <form
-        onSubmit={(event) => submitHandler(event)}
-        className="ui container form"
-      >
+    <div className="ui container segment" style={{ marginTop: "30px" }}>
+      <form onSubmit={(e) => submitHandler(e)} className="ui container form">
         <div className="field">
-          <label htmlFor="name">Your Name</label>
+          <label>Edit Name</label>
           <input
             type="text"
-            id="name"
+            placeholder="Name"
             name="username"
             value={username}
-            placeholder="Your Name"
             onChange={(e) => inputChange(e)}
           />
         </div>
         <div className="field">
-          <label htmlFor="email">Your Email</label>
+          <label>Edit Email</label>
           <input
             type="text"
-            id="email"
+            placeholder="Email"
             name="email"
             value={email}
-            placeholder="Your Email"
             onChange={(e) => inputChange(e)}
           />
         </div>
         <div className="field">
-          <label htmlFor="city">City</label>
+          <label>Edit City</label>
           <input
             type="text"
-            id="city"
             name="city"
             value={city}
-            placeholder="Your Name"
+            placeholder="City"
             onChange={(e) => inputChange(e)}
           />
         </div>
         <div className="field">
-          <label htmlFor="topic">Topic</label>
+          <label>Edit Your Topic</label>
           <textarea
+            rows="2"
+            placeholder="Topic"
             name="topic"
             value={topic}
-            type="text"
-            id="topic"
-            rows="2"
             onChange={(e) => inputChange(e)}
           ></textarea>
         </div>
         <div className="field">
-          <label htmlFor="description">Descrition</label>
+          <label>Edit description</label>
           <textarea
+            placeholder="Description"
             name="description"
             value={description}
-            type="text"
-            id="description"
             onChange={(e) => inputChange(e)}
           ></textarea>
         </div>
-        <button type="submit" className="ui blue button">
+        <button type="submit" className="ui green button">
           Submit
         </button>
         <Link to="/" className="ui red button">
@@ -99,4 +89,5 @@ const Edituser = () => {
     </div>
   );
 };
+
 export default Edituser;

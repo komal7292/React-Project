@@ -14,7 +14,7 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Screenpage} />
         <Route exact path="/postupload" component={Postupload} />
-        <Route exact path="/edituser" component={Edituser} />
+        <Route exact path="/edituser/:id" component={Edituser} />
         <Route exact component={Error} />
       </Switch>    
     </>
