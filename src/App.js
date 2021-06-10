@@ -3,6 +3,7 @@ import {Route, Switch} from 'react-router-dom';
 import Postupload from './Postupload'
 import Screenpage from './Screenpage';
 import Edituser from './Edituser';
+// import Date from './Date'
 import './app.css';
 
 // import axios from "axios";
@@ -15,6 +16,7 @@ const App = () => {
         <Route exact path="/" component={Screenpage} />
         <Route exact path="/postupload" component={Postupload} />
         <Route exact path="/edituser/:id" component={Edituser} />
+        {/* <Route exact path="/date" component={Date} /> */}
         <Route exact component={Error} />
       </Switch>    
     </>

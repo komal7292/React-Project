@@ -6,7 +6,13 @@ import axios from "axios";
 const Edituser = () => {
   let { id } = useParams();
   let history = useHistory();
-  const [user, setUser] = useState([]);
+  const [user, setUser] = useState({
+    username: "",
+    email: "",
+    city: "",
+    topic: "",
+    description: "",
+  });
   const { username, email, city, topic, description } = user;
 
   function inputChange(e) {

@@ -4,37 +4,27 @@ import { Link, useHistory } from "react-router-dom";
 
 const Postupload = () => {
   let history = useHistory();
-  const [post, setPost] = useState({
+  const [user, setUser] = useState({
     username: "",
     email: "",
     city: "",
     topic: "",
     description: "",
   });
-  const { username, email, city, topic, description } = post;
+  const { username, email, city, topic, description } = user;
   function inputChange(e) {
-    setPost({ ...post, [e.target.name]: [e.target.value] });
+    setUser({ ...user, [e.target.name]: [e.target.value] });
   }
 
   const submitHandler = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:3001/posts", post);
+    await axios.post("http://localhost:3001/posts", user);
     history.push("/");
-    setPost({
-      username: "",
-      email: "",
-      city: "",
-      topic: "",
-      description: "",
-    });
   };
 
   return (
     <div className="ui container segment" style={{ marginTop: "50px" }}>
-      <form
-        onSubmit={(e) => submitHandler(e)}
-        className="ui container form"
-      >
+      <form onSubmit={(e) => submitHandler(e)} className="ui container form">
         <div className="field">
           <label htmlFor="name">Your Name</label>
           <input
